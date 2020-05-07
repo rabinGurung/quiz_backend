@@ -1,0 +1,15 @@
+,
+        answer_option:{
+            type:Type.STRING,
+            allowNull:false,
+            unique:true
+        },
+        isRealAns:{
+            type:Type.INTEGER,
+            allowNull:false
+        },
+        qid:{
+        type:Type.INTEGER,
+        references:'Question',
+        referencesKey:'id'
+    }
